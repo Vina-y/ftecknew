@@ -1,17 +1,14 @@
 {
-    "version": 2,
     "builds": [{
         "src": "ftech_app/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9"}
-    },{
-        "src":"build_files.sh",
-        "use":"@vercel/static-build",
-        "config":{
-            "distDir":"staticfiles_build"
-        }
-    }
-],
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    },
+    {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "staticfiles_build" }
+    }],
     "routes": [
         {
             "src": "/static/(.*)",
@@ -21,7 +18,5 @@
             "src": "/(.*)",
             "dest": "ftech_app/wsgi.py"
         }
-
-    ],
-     "outputDirectory": "staticfiles_build"
+    ]
 }
