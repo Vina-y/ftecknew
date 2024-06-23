@@ -20,7 +20,13 @@ from ftech import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('ftech.urls'))
+    path('',include('ftech.urls')),
+    # path("", include("apps.authentication.urls")), # Auth routes - login / register
+
+    # ADD NEW Routes HERE
+
+    # Leave `Home.Urls` as last the last line
+    path("", include("home.urls"))
 ]
   
 

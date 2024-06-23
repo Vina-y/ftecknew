@@ -5,14 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Fteck Software Solution LLP - Index</title>
+  <title>Fteck Software Solution LLP</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  
   <!-- Favicons -->
-  <link href="static/img/fteck-logo.png" rel="icon">
-  <link href="static/img/fteck-logo.png" rel="apple-touch-icon">
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="static/img/fteck-logo.png">
+ 
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -35,6 +34,64 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+
+
+    .columns {
+      float: left;
+      width: 50%;
+      padding: 8px;
+    }
+    
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+    
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+    
+    .price .header {
+      background-color: #111;
+      color: white;
+      font-size: 25px;
+    }
+    
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .price .grey {
+      background-color: #eee;
+      font-size: 16px;
+    }
+    .price .white {
+      font-size: 16px;
+    }
+    
+    .button {
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .columns {
+        width: 100%;
+      }
+    }
+    </style>
 </head>
 
 <body>
@@ -69,7 +126,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto " href="#product">Product</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -83,8 +140,8 @@
         <a href="http://www.linkedin.com/in/future-technology" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
       <div class="header-social-links d-flex align-items-center">
-        <a href="{% url 'login'%}" class="login-nav">login</a>
-        <a href="{% url 'register'%}" class="register-nav">Register</a>
+        <a href="https://ftecksoftware.com/admin" target="blank" class="login-nav">Admin</a>
+        <!-- <a href="{% url 'register'%}" class="register-nav">Register</a> -->
       </div>
 
     </div>
@@ -97,12 +154,9 @@
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
           <div>
-            <h2>Fteck Software LLC helps companies to design for business productivity alongside
-                digital marketing solutions for businesses and brands.</h2>
-            <p>We are an Information Technology services company providing automation needs of
-              businesses across various domains and are promoted by a group of qualified and
-              experienced professionals from the Information Technology industry, having a
-              combined business experience of more than 10 years.</p>
+            <h2>At Fteck Software Solution LLP, we are a leading software development company that specializes in delivering cutting-edge solutions to businesses worldwide. With a strong focus on innovation, quality, and client satisfaction, we help organizations harness the power of technology to drive growth, efficiency, and digital transformation.</h2>
+            <p>Our team comprises highly skilled software engineers, designers, and technology enthusiasts who are passionate about creating software solutions that solve complex problems and deliver tangible results. With years of industry experience and a deep understanding of various domains, we have successfully served clients across industries such as healthcare, finance, e-commerce, education, and more.</p>
+           <p>What sets us apart is our client-centric approach. We believe in building strong and long-lasting partnerships with our clients, understanding their unique needs, and tailoring our solutions to address their specific challenges. We take the time to listen, analyze, and strategize before embarking on the development journey, ensuring that our solutions align with your business goals and deliver exceptional value.</p>
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
           </div>
         </div>
@@ -151,67 +205,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6 mt-2 mb-tg-0 order-2 order-lg-1">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
-                  <h4>DIGITAL TRANSFORMATION</h4>
-                  <p>Process digitization, cloud migration, cybersecurity reinforcement, harmonization and hardware / software upgrade.</p>
-                </a>
-              </li>
-              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-                  <h4>NETWORKING</h4>
-                  <p>OFC / copper / Wifi network, planning, installation, logical networking, security, hardware supply and implementation..</p>
-                </a>
-              </li>
-              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="200">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
-                  <h4>ROBOTIC PROCESS AUTOMATION</h4>
-                  <p>Analysis, bot design, development and deployment using platforms like Automation Anywhere and UI-Path.</p>
-                </a>
-              </li>
-              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="300">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-                  <h4>INTERNET OF THINGS & IIOT</h4>
-                  <p>PLC programming, SCADA implementation, HMI, physical prototyping, sensor and hardware integration.</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <figure>
-                  <img src="static/img/features-1.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <figure>
-                  <img src="static/img/features-2.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <figure>
-                  <img src="static/img/features-3.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <figure>
-                  <img src="static/img/features-4.png" alt="" class="img-fluid">
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
+   
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
@@ -314,158 +308,50 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- ======= Product Section ======= -->
+    <section id="product" class="video-section section-bg align-items-center">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
           <h2>Our Products</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+         
+        
         </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="static/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="static/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        
 
       </div>
-    </section><!-- End Portfolio Section -->
+      <div class="row  " >
+        <div class="col-md-6 text-center" data-aos="zoom-in">
+          <div class="section-title" data-aos="fade-up">
+            <p>Hospital Management System</p>
+          </div>
+          <div  >
+            <video  heigth='auto' playsinline autoplay muted loop controls>
+              <source  src="static/video/hms_video.mp4" type="video/mp4">
+              
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <!-- dfdf -->
+        <div class="col-md-6 text-center " data-aos="zoom-in">
+          <div class="section-title" data-aos="fade-up">
+            <p>Inventory Management System</p>
+           
+          
+          </div>
+
+          <div class="icon-box icon-box-pink">
+            <video  heigth='auto' playsinline autoplay muted loop controls>
+              <source  src="static/video/invent_video.mp4" type="video/mp4">
+              
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section><!-- End Product Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -473,24 +359,100 @@
 
         <div class="row" data-aos="zoom-in">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Inventory Management Software</h3>
+            <p> The development cost of inventory management software can vary significantly depending on various factors, including the complexity of the features, the technology stack used, the development approach (custom development or using existing frameworks), and the development resources involved (in-house development team or outsourcing).
+              As a rough estimate, the basic development cost of inventory management software can range from $10,000 to $50,000 for a simple and straightforward system with essential functionalities. This would typically include features such as inventory tracking, stock management, order processing, and basic reporting.
+              However, it's important to note that this estimate can vary significantly based on your specific requirements. If you need more advanced features like barcode scanning, integration with other systems (e.g., ERP or e-commerce platforms), user permissions and access control, advanced analytics, or mobile app support, the development cost can increase accordingly.
+              Additionally, ongoing maintenance, updates, and support should also be considered as part of the overall cost.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <!-- <a class="cta-btn align-middle" href="#">Call To Action</a> -->
+          </div>
+        </div>
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Hospital Management Software </h3>
+            <p> The development cost of a hospital management software can vary significantly based on various factors, including the complexity of the system, the number of modules and features required, the technology stack used, the development approach, and the size of the hospital or healthcare facility.
+              As a rough estimate, the basic development cost of a hospital management software can range from $50,000 to $200,000 or more. This estimate typically includes core functionalities such as patient registration, appointment scheduling, electronic medical records (EMR), billing and invoicing, pharmacy management, laboratory integration, and basic reporting.
+              However, it's important to note that this estimate may not include additional features or modules like telemedicine, image diagnostics, inventory management, analytics and reporting, integration with external systems, and advanced security measures. These additional features can increase the development cost accordingly.
+              Moreover, ongoing maintenance, updates, and support should also be factored into the overall cost of the software.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <!-- <a class="cta-btn align-middle" href="#">Call To Action</a> -->
           </div>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
+     <!-- ======= Features Section ======= -->
+     <section id="features" class="features">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 mt-2 mb-tg-0 order-2 order-lg-1">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item" data-aos="fade-up">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                  <h4>Importance of Inventory Management Software for Retail Industry: </h4>
+                  <p>Inventory management software plays a crucial role in the retail industry and offers several key benefits for businesses. Here are some of the important reasons why inventory management software is essential for retail industries:</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="100">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                  <h4>Accurate inventory tracking:</h4>
+                  <p>Inventory management software enables real-time tracking of stock levels, providing accurate information about available products. This helps retailers avoid stockouts and overstock situations, ensuring that they have the right products in the right quantities at all times.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="200">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                  <h4>Improved efficiency and productivity:</h4>
+                  <p>With inventory management software, manual tasks such as manual stock counts, data entry, and order processing can be automated. This improves overall operational efficiency, reduces human errors, and frees up staff time to focus on more strategic activities.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2" data-aos="fade-up" data-aos-delay="300">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                  <h4>Demand forecasting and planning:</h4>
+                  <p>Advanced inventory management software often includes demand forecasting capabilities. By analyzing historical sales data and trends, the software can help retailers anticipate customer demand, plan inventory levels, and make informed purchasing decisions. This reduces the risk of excess inventory or stockouts, leading to improved profitability.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <figure>
+                  <img src="static/img/features-1.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <figure>
+                  <img src="static/img/features-2.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <figure>
+                  <img src="static/img/features-3.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <figure>
+                  <img src="static/img/features-4.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- <section id="testimonials" class="testimonials">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
           <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+         
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -507,9 +469,10 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -520,9 +483,10 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -533,9 +497,10 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -546,9 +511,10 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -559,17 +525,19 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
-          </div>
+          <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    <!-- <section id="team" class="team">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -584,34 +552,34 @@
               <div class="pic"><img src="static/img/team/team-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
+                <span>Chief Executive Officer</span> -->
                 <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div> -->
-              </div>
+              <!-- </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="100">
               <div class="pic"><img src="static/img/team/team-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <span>Product Manager</span> -->
                 <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div> -->
-              </div>
+              <!-- </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="200">
               <div class="pic"><img src="static/img/team/team-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
@@ -629,11 +597,12 @@
 
         </div>
 
-      </div>
-    </section><!-- End Team Section -->
+      </div> -->
+    <!-- </section> -->
+    <!-- End Team Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <!-- <section id="clients" class="clients">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -693,8 +662,9 @@
 
         </div>
 
-      </div>
-    </section><!-- End Clients Section -->
+      </div> -->
+    <!-- </section> -->
+    <!-- End Clients Section -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
@@ -702,21 +672,44 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
+        <div class="row" data-aos="zoom-in">
+          <div class="columns col-md-6 ">
+            <ul class="price">
+              <li class="header">Hospital Management System</li>
+              <li class="grey">Our Primary Price &nbsp&nbsp&nbsp <b>$ 3,666</b> </li>
+              <li class="white">Our Standard Price &nbsp&nbsp&nbsp<b>$ 11,888</b> </li>
+              <li class="grey">Our Premium Price&nbsp&nbsp&nbsp <b>$ 29,222</b> </li>
+              <li class="white">Market Price &nbsp&nbsp&nbsp <b>$50,000 - $200,000</b> </li>
+              
+              <li class="grey"><a href="#" class="button">Buy Now</a></li>
+            </ul>
+          </div>
+          
+          <div class="columns col-md-6">
+            <ul class="price">
+              <li class="header" style="background-color:#04AA6D">Inventory Management System</li>
+              
+              <li class="grey">Our Primary Price &nbsp&nbsp&nbsp <b>$ 1,222</b> </li>
+              <li class="white">Our Standard Price &nbsp&nbsp&nbsp<b>$ 3,500</b> </li>
+              <li class="grey">Our Premium Price&nbsp&nbsp&nbsp <b>$ 7,000</b> </li>
+              <li class="white">Market Price &nbsp<b>$10,000 - $50,000</b> </li>
+              
+              <li class="grey"><a href="#" class="button">Buy Now</a></li>
+            </ul>
+          </div>
+          <!-- <div class="col-md-6">
             <div class="box" data-aos="zoom-in">
-              <h3>Free</h3>
+              <h3><b>Inventory Management System</b> </h3>
               <h4><sup>$</sup>0<span> / month</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>Our Primary Price</li>
+                <li>Our Standard Price </li>
+                <li>Our Premium Price</li>
+                <li >Market Price</li>
+                
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Buy Now</a>
@@ -724,24 +717,24 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+          <div class="col-md-6 mt-4 mt-md-0">
             <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
+              <h3><b>Hospital Management System</b></h3>
+              <h4><sup>$</sup>19</h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>Our Primary Price   <sup>$</sup>19  </li>
+                <li>Our Standard Price </li>
+                <li>Our Premium Price</li>
+                <li >Market Price</li>
+                
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">Buy Now</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+          <!-- <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div class="box" data-aos="zoom-in" data-aos-delay="200">
               <h3>Developer</h3>
               <h4><sup>$</sup>29<span> / month</span></h4>
@@ -774,7 +767,7 @@
                 <a href="#" class="btn-buy">Buy Now</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -894,7 +887,8 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="submit_form/" method="POST" role="form" class="php-email-form">
+              {%csrf_token%}
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -911,7 +905,7 @@
               </div>
               <div class="form-group mt-3">
                 <label for="name">Phone Number</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="phone" id="phone" required>
               </div>
               <div class="form-group mt-3">
                 <label for="name">Message</label>
@@ -920,7 +914,7 @@
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Thanks for contacting.</div>
               </div>
               <div class="text-center"><button type="submit">Submit</button></div>
             </form>
@@ -941,7 +935,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Ftech</h3>
+              <h3>Fteck</h3>
               <p>
                 Jamshedpur,Jharkhand<br>
                 831002, India<br><br>

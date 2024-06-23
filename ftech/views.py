@@ -6,6 +6,8 @@ from django.views.decorators.csrf import ensure_csrf_cookie,csrf_protect
 import datetime
 from django.shortcuts import redirect
 
+from ftech.models import bookDemo
+
 # Create your views here.
 def render_index(request):
     return render(request,"index.html")
@@ -14,7 +16,7 @@ def register_page(request):
     return render(request,'registration_page.html')
 # Create your views here.
 def render_login(request):
-    return render(request,"login.html")
+    return render(request,"home/dashboard.html")
 
 def perform_registration(request):
     if request.method == 'POST':
@@ -83,3 +85,16 @@ def perform_registration(request):
         return render(request,"login.html")
     else:
         return HttpResponse('Registration failed.')
+    
+def submit_form(request):
+    if request.method =='POST':
+        name=request.POST.get('name')
+        phone=request.POST.get('phone')
+        email=request.POST.get('email')
+        subject=request.POST.get('subject')
+        message=request.POST.get('message')
+        demo_obj=bookDemo.objects.create(name=name,phone=phone,email=email,subject=subject,message=message)
+        demo_obj.save()
+        return HttpResponse('true')
+    else:
+        return HttpResponse('false')

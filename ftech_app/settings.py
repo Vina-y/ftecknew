@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-fqzs86vhr(y0d^6apt5tt9oxhx$gri))b@4mmu4$!tqwsqa&t0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ftech.apps.FtechConfig'
+    'ftech',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +76,25 @@ WSGI_APPLICATION = 'ftech_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'fteck',
+#         'USER': 'root',
+#         'PASSWORD':'',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#         'ATOMIC_REQUESTS': True,
+#         # 'OPTIONS': {'charset': 'utf8mb4'},
+#         # 'django_extensions'
+
+#         'OPTIONS': {
+#             'sql_mode': 'traditional',
+#             'charset': 'utf8mb4',
+
+#         }
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -82,6 +103,25 @@ DATABASES = {
 }
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'ftecksof_fteck',
+#         'USER': 'ftecksof_root',
+#         'PASSWORD':'^FMa0s9HggSE',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#         'ATOMIC_REQUESTS': True,
+#         # 'OPTIONS': {'charset': 'utf8mb4'},
+#         # 'django_extensions'
+
+#         'OPTIONS': {
+#             'sql_mode': 'traditional',
+#             'charset': 'utf8mb4',
+
+#         }
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -117,6 +157,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_DIR = os.path.join(BASE_DIR,"static")
+STATICFILES_DIRS = [STATIC_DIR,]
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

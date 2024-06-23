@@ -1,0 +1,68 @@
+.env# Ignore Python compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyo
+*.pyd
+
+# Ignore the virtual environment directory
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# Ignore Django database and migration files
+*.sqlite3
+db.sqlite3
+*.sqlite
+*.sqlite3-shm
+*.sqlite3-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Ignore local environment settings
+.env
+.local.env
+settings_local.py
+
+# Ignore Django media and static files
+/media
+/media/
+staticfiles/
+static/
+*.log
+
+# Ignore node_modules (if you are using npm or yarn for frontend dependencies)
+node_modules/
+
+# Ignore coverage and test-related files
+.coverage
+coverage.xml
+*.cover
+*.log
+.cache
+nosetests.xml
+test-results/
+
+# Ignore backup files
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Ignore IDE and editor specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore any other sensitive or system files
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignore OS-specific files
+*.tmp
+*.temp
