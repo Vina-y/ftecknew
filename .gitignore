@@ -28,11 +28,11 @@ db.sqlite3
 .local.env
 settings_local.py
 
-# Ignore Django media and static files
-/media
-/media/
-staticfiles/
-static/
+# # Ignore Django media and static files
+# /media
+# /media/
+# staticfiles/
+# static/
 *.log
 
 # Ignore node_modules (if you are using npm or yarn for frontend dependencies)

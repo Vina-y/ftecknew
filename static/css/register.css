@@ -1,0 +1,12 @@
+body {
+    background-image: url("../img/registration.jpg");
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .card-login{
+    box-shadow: 1px 1px 3px 3px orange;
+    
+  }
