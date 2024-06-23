@@ -28,7 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','.vercel.app','.now.sh']
 
-
+import pymysql
+pymysql.version_info=(1,4,6,'final',0) #(major,minor,micro,releaselevel,serial)
+pymysql.install_as_MySQLdb()
 # Application definition
 
 INSTALLED_APPS = [
