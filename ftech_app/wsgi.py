@@ -15,6 +15,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ftech_app.settings')
 
 application = get_wsgi_application()
 
+app = application
 
 # chat application
 
