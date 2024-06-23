@@ -1,8 +1,9 @@
 {
+    "version": 2,
     "builds": [{
         "src": "ftech_app/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb"}
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9"}
     },{
         "src":"build_files.sh",
         "use":"@vercel/static-build",
